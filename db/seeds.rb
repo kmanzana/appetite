@@ -14,6 +14,7 @@ restaurants = [
 		name: 'The Med',
 		address: '1002 Walnut street',
 		city: 'Boulder, CO',
+		image_url: 'http://www.themedboulder.com/images/med-logo.png',
 		dishes: [
 			{
 				name: 'Pomodori E Mozzarella',
@@ -42,7 +43,16 @@ restaurants = [
 			}
 		]
 	}
+	{
+		name: "boulder cafe", 
+		address: "2423 boxwood court", 
+		city: "Boulder", 
+		image_url: "http://media-cdn.tripadvisor.com/media/photo-s/01/1c/c1/5a/boulder-cafe.jpg",
+		dishes: [
+		]
+	}
 ]
+
 
 
 restaurants.each do |restaurant|

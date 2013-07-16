@@ -13,7 +13,7 @@
 <img id="top-dish" src="<%= "#{dish.image_url}" %>">
 
 
-<div id="container" class="js-masonry" data-masonry-options='{ "itemSelector": ".item" }'>
+<div id="container">
 	<% @dishes.each do |dish| %>
 		<%= render '/dishes/dish', dish: dish %>
 	<% end %>
