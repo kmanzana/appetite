@@ -1,0 +1,11 @@
+<h1>Listing restaurants</h1>
+
+<div class="restaurant-list">
+	<%= render @restaurants %>
+</div>
+
+<div class="form-spot">
+  <%= link_to 'New Restaurant', new_restaurant_url, remote: true %>
+</div>
+
+

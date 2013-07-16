@@ -1,0 +1,8 @@
+<span class="item well">
+		<div><strong><%= link_to restaurant.name, restaurant %></strong></div>
+		<div><em><%= restaurant.address %></em></div>
+		<% if session[:user_id] %>
+			<%= link_to 'Edit', edit_restaurant_path(restaurant) %>
+			<%= link_to 'Destroy', restaurant, method: :delete, data: { confirm: 'Are you sure?' } %>
+		<% end %>
+</span>

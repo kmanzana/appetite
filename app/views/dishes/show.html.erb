@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<h1><%= @dish.name %> from <%= @dish.restaurant.name %></h1>
+
+<%= link_to 'Back', restaurant_path(@dish.restaurant) %>
+<p>
+  <strong>Name:</strong>
+  <%= @dish.name %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @dish.price %>
+</p>
+
+<div class="form-spot">
+	<%= link_to 'Edit', edit_restaurant_dish_path(@dish.restaurant, @dish), remote: true %>
+</div>
+

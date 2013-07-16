@@ -1,0 +1,23 @@
+<h1>
+	APPetite
+	<span class="actions">
+		<%= link_to 'Login', '#' %> <br>
+		<%= link_to 'Signup', '#' %>
+	</span>
+</h1>
+<p>This is a tagline for appetite. It is witty and enticing. Perhaps, it even includes a call to action.</p>
+
+
+<p>Search by...</p>
+<form action="<%= restaurants_url %>" method="get" class="form">
+  <%= label_tag :name, 'Name' %>
+	<%= text_field_tag :name %>
+	<%= submit_tag "Go!", id: "search-btn", name: nil %>
+</form>
+
+<p>Or...</p>
+<form action="<%= restaurants_url %>" method="get" class="form">
+  <%= label_tag :city, 'City' %>
+	<%= text_field_tag :city %>
+	<%= submit_tag "Go!", id: "search-btn", name: nil %>
+</form>

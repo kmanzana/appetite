@@ -1,0 +1,23 @@
+<p id="notice"><%= notice %></p>
+
+<h1>
+	Dishes at <em><%= @restaurant.name %></em> - <%= @restaurant.address %>
+	<span class="actions">
+		<%= link_to 'Edit', edit_restaurant_path(@restaurant) %> <br>
+		<%= link_to 'Back', restaurants_path %>
+	</span>
+</h1>
+
+
+<div id="container" class="js-masonry" data-masonry-options='{ "itemSelector": ".item" }'>
+	<% @dishes.each do |dish| %>
+		<%= render '/dishes/dish', dish: dish %>
+	<% end %>
+</div>
+
+<div class="form-spot">
+	<%= link_to 'Add a Dish', new_restaurant_dish_url(@restaurant), remote: true %>
+</div>
+
+
+
