@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20130707232341) do
+ActiveRecord::Schema.define(version: 20130716035313) do
 
   create_table "dishes", force: true do |t|
     t.integer  "restaurant_id"
@@ -28,6 +28,7 @@ ActiveRecord::Schema.define(version: 20130707232341) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "city"
+    t.string   "image_url",  default: "http://www.restaurantratings.com/assets/restaurant-icon-283a3eceacfd466c9081cc365869b986.gif"
   end
 
 end

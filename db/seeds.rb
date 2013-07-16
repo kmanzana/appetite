@@ -29,6 +29,16 @@ restaurants = [
 				name: 'Ravioli Raimondo',
 				price: 16.95,
 				image_url: 'http://2.bp.blogspot.com/_bv1UHtcZ51k/S8MOKrTe0eI/AAAAAAAABas/ednqOamOX1I/s1600/InVinoRav.jpg'
+			},
+			{
+				name: 'Fazzoletti',
+				price: 17.95,
+				image_url: 'http://whatdidyoueat.typepad.com/photos/uncategorized/2008/01/17/img_1534.jpg'
+			},
+			{
+				name: 'Pollo Parmigiana',
+				price: 17.95,
+				image_url: 'http://www.bonappetit.com/images/magazine/2008/09/mare_chicken_parmesan_h.jpg'
 			}
 		]
 	}
